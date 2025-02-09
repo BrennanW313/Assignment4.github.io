@@ -3,7 +3,7 @@
  <h1>Assignment 4: Drawing</h1>
 </head>
 <body>
-  <canvas id="canvas" width="150" height="150"></canvas>
+  <canvas id="canvas" width="300" height="300"></canvas>
   <script>
     function draw() {
       const canvas = document.getElementById("canvas");
@@ -14,9 +14,9 @@
         ctx.fillRect(10, 10, 150, 100);
 
         ctx.beginPath();
-        ctx.moveTo(75, 50);
-        ctx.lineTo(50, 25);
-        ctx.lineTo(100, 25);
+        ctx.moveTo(175, 50);
+        ctx.lineTo(150, 75);
+        ctx.lineTo(200, 75);
         ctx.fillStyle = "rgb(0 200 0)";
         ctx.fill();
        
@@ -24,6 +24,7 @@
         ctx.moveTo(0, 0);
         ctx.lineTo(200, 100);
         ctx.closePath();
+        ctx.strokeStyle = "rgb(200 0 200)";
         ctx.stroke();
       }
     }
