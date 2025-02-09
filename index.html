@@ -34,5 +34,13 @@
       }
     }
     draw();
+   function reset() {
+      const canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        const ctx = canvas.getContext("2d");
+        context.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    }
   </script>
+ <input id="Clear" type="button" value="Clear" onclick="reset();" />
 </body>
