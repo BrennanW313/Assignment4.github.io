@@ -5,7 +5,9 @@
 <script>
 var c = document.getElementById("Shapes");
   var ctx = c.getContext("2d");
-  ctx.fillRect(25, 25, 100, 100);
+  ctx.moveTo(0, 0);
+  ctx.lineTo(200, 100);
+  ctx.stroke();
 </script>
 <form>
   <input type="reset" value="Clear">
