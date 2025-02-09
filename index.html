@@ -31,6 +31,7 @@
         ctx.closePath();
         ctx.strokeStyle = "yellow";
         ctx.stroke();
+        ctx.clearRect(0, 0, 500, 500);
       }
     }
     draw();
@@ -38,7 +39,7 @@
       const canvas = document.getElementById("canvas");
       if (canvas.getContext) {
         const ctx = canvas.getContext("2d");
-        context.clearRect(0, 0, 500, 500);
+        ctx.clearRect(0, 0, 500, 500);
       }
     }
   </script>
