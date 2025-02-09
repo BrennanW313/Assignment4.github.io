@@ -9,10 +9,21 @@
       const canvas = document.getElementById("canvas");
       if (canvas.getContext) {
         const ctx = canvas.getContext("2d");
-        ctx.fillStyle = "rgb(200 0 0)";
-        ctx.fillRect(10, 10, 50, 50);
+       
+        ctx.fillStyle = "rgb(0 0 200)";
+        ctx.fillRect(10, 10, 150, 100);
+
+        ctx.beginPath();
+        ctx.moveTo(75, 50);
+        ctx.lineTo(50, 25);
+        ctx.lineTo(100, 25);
+        ctx.fillStyle = "rgb(0 200 0)";
+        ctx.fill();
+       
+        ctx.beginPath();
         ctx.moveTo(0, 0);
         ctx.lineTo(200, 100);
+        ctx.closePath();
         ctx.stroke();
       }
     }
